@@ -1,0 +1,26 @@
+.footer {
+  text-align: center;
+}
+.footer .icons {
+  padding: 3rem 0;
+}
+.footer .icons a {
+  line-height: 4.2rem;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 1.22rem;
+  border-radius: 50%;
+  color: #ffc246;
+  margin: 1rem;
+  border: 0 1rem solid #ffc246;
+
+  font-size: 5rem;
+  transition: 0.2s linear;
+}
+.footer .icons a:hover {
+  height: 4.5rem;
+  width: 4.5rem;
+  color: #fff;
+  background: #f9580e;
+  border: #f9580e;
+}

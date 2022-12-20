@@ -1,0 +1,55 @@
+.contacto {
+  background: #171717;
+}
+.contacto .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  text-align: center;
+}
+.contacto .row .form-container {
+  width: 50%;
+}
+.contacto .row .form-container input,
+textarea {
+  height: 4rem;
+  width: 100%;
+  background: #fff;
+  border-radius: 5rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  color: #f9580e;
+  font-size: 1.7rem;
+  transition: 0.2s linear;
+}
+.contacto .row .form-container input:focus,
+textarea:focus {
+  border: 0.4rem solid #f9580e;
+}
+.contacto .row .form-container textarea {
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+.contacto .row .form-container input[type="submit"] {
+  height: 5rem;
+  width: 17rem;
+  background: #f9580e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+.contacto .row .form-container input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contacto .row .form-container input[type="submit"]:hover {
+  background: none;
+  color: #f9580e;
+  border: 0.2rem solid #f9580e;
+}

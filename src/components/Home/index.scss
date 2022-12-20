@@ -1,0 +1,49 @@
+.home {
+  min-height: 90vh;
+  background: linear-gradient(rgba(225, 184, 0, 0.2), rgba(236, 134, 0, 0.8)),
+    url(../../assets/images/barrios/daria-nepriakhina-LZkbXfzJK4M-unsplash.jpg)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+.home .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-top: 25rem;
+  text-align: center;
+}
+.home .content h1 {
+  font-size: 5rem;
+  color: white;
+  padding: 0 1rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+.home .content p {
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem;
+}
+.home .content button {
+  height: 5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background: #f9580e;
+  color: #eee;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  margin: 4rem 0;
+  border-color: #f9580e;
+}
+.home .content button:hover {
+  background: none;
+  border: 0.2rem solid #f9580e;
+}

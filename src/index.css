@@ -1,0 +1,16 @@
+html{
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: 300 11px/1.4 'Poppins', 'sans-serif';
+  background-color: #0c0b0b;
+  text-decoration: none;
+  outline: none;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
