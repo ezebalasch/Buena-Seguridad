@@ -46,6 +46,30 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".fa-bars").click(function () {
+          $(this).toggleClass("fa-times");
+          $(".navbar").toggleClass("nav-toggle");
+        });
+        $(window).on("scroll load", function () {
+          $(".fa-bars").removeClass("fa-times");
+          $(".navbar").removeClass("nav-toggle");
+          $("section").each(function () {
+            var id = $(this).attr("id");
+            var height = $(this).height();
+            var offset = $(this).offset().top - 200;
+            var top = $(window).scrollTop();
+            if (top >= offset && top < offset + height) {
+              $(".navbar ul ").removeClass("active");
+              $(".navbar")
+                .find('[to="' + id + '"]')
+                .addClass("active");
+            }
+          });
+        });
+      });
+    </script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
