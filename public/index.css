@@ -49,7 +49,8 @@
         flex-flow: column;
     }
     .contacto .row .form-container{
-        width: 90%;
+        max-width: 100%;
+        width: 65% !important;
         padding: 0;
     }
 }
