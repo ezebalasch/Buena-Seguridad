@@ -30,18 +30,20 @@
 }
 @media screen and (max-width: 1167px) {
   .mision .box-container {
-    padding: 4rem;
-    margin: 0 14rem;
-    max-width: 70%;
+    padding: 0;
+    margin: 5.5rem;
   }
   .mision .box-container .box {
     display: block;
-    height: 110rem;
-    width: 70rem;
+    height: 80%;
+    width: 95%;
+    justify-content: center;
+    padding: 0;
+    margin: 0%;
   }
   .mision .box-container .box img {
     margin: 0;
-    max-width: 616px;
+    max-width: 95%;
     align-items: center;
   }
   .mision .box-container .box .col-1 p {
