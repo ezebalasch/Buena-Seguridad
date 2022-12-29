@@ -1,7 +1,18 @@
 import "./index.scss";
 import camara from "../../assets/images/camaras/michal-jakubowski-oQD9uq4Rd4I-unsplash.jpg";
+import { useRef, useState } from "react";
 
 const About = () => {
+  const [hiddenState, setHiddenState] = useState(true);
+  const textCard = useRef(null);
+  const handleVisibility = () => {
+    if (hiddenState === true) {
+      textCard.current.classList.remove("hidden");
+    } else {
+      textCard.current.classList.add("hidden");
+    }
+    setHiddenState((prev) => !prev);
+  };
   return (
     <section class="about" id="about">
       <h1 class="heading">Nosotros</h1>
@@ -18,9 +29,17 @@ const About = () => {
             tecnología para satisfacer las exigencias de un mercado que se
             transforma permanentemente.
           </p>
-          <a href="#">
-            <button>Leer Mas</button>
-          </a>
+          <p class="hidden" ref={textCard}>
+            Proveemos de información oportuna y completa.Contamos con rapidéz y
+            velocidad en la modificación de dispositivos y respuestas ante
+            agresiones. Contamos con total control sobre la operación, los
+            medios y el personal. Aseguramos el cumplimiento de Leyes y
+            disposiciones legales, Nacionales y Provinciales. Utilizamos
+            procedimientos claros y sencillos de Administración de Personal.
+          </p>
+          <button onClick={handleVisibility}>
+            {hiddenState === true ? "Leer mas" : "Leer menos"}
+          </button>
         </div>
       </div>
     </section>

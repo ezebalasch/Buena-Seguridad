@@ -9,8 +9,25 @@ import cliente4 from "../../assets/images/barrios/Natania.jpg";
 import cliente5 from "../../assets/images/barrios/AiresAndino.jpg";
 import cliente6 from "../../assets/images/barrios/Fradaos.jpg";
 import cliente7 from "../../assets/images/barrios/Conviccion.jpg";
+import { useRef, useState } from "react";
 
 const Clientes = () => {
+  const [hiddenState, setHiddenState] = useState(true);
+  const airesCard = useRef(null);
+  const fradaosCard = useRef(null);
+  const conviCard = useRef(null);
+  const handleVisibility = () => {
+    if (hiddenState === true) {
+      airesCard.current.classList.remove("hidden");
+      fradaosCard.current.classList.remove("hidden");
+      conviCard.current.classList.remove("hidden");
+    } else {
+      airesCard.current.classList.add("hidden");
+      fradaosCard.current.classList.add("hidden");
+      conviCard.current.classList.add("hidden");
+    }
+    setHiddenState((prev) => !prev);
+  };
   return (
     <section class="clientes" id="clientes">
       <h1 class="heading">Clientes satisfechos</h1>
@@ -104,7 +121,7 @@ const Clientes = () => {
             </NavLink>
           </div>
         </div>
-        <div class="box">
+        <div class="box hidden" ref={airesCard}>
           <img src={cliente5} alt="familias" height="15%" width="15%" />
           <h3>Aires Andino</h3>
           <p>Barrio Privado Mendoza</p>
@@ -126,7 +143,7 @@ const Clientes = () => {
             </NavLink>
           </div>
         </div>
-        <div class="box">
+        <div class="box hidden" ref={fradaosCard}>
           <img src={cliente6} alt="familias" height="15%" width="15%" />
           <h3>Fradaos</h3>
           <p>Empresa de Transportes</p>
@@ -148,7 +165,7 @@ const Clientes = () => {
             </NavLink>
           </div>
         </div>
-        <div class="box">
+        <div class="box hidden" ref={conviCard}>
           <img src={cliente7} alt="familias" height="15%" width="15%" />
           <h3>Convicción SA</h3>
           <p>Empresa Constructora</p>
@@ -171,6 +188,9 @@ const Clientes = () => {
           </div>
         </div>
       </div>
+      <button onClick={handleVisibility}>
+        {hiddenState === true ? "Ver todos" : "Ver menos"}
+      </button>
     </section>
   );
 };

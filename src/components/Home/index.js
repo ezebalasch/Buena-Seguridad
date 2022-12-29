@@ -1,5 +1,6 @@
 import "./index.scss";
 import Producto from "./Producto/index";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -11,9 +12,17 @@ const Home = () => {
             Nuestro trabajo es convertir del mundo un lugar más seguro para el
             cuidando, las personas y las empresas.
           </p>
-          <a href="#about">
-            <button>Descubre mas</button>
-          </a>
+          <Link
+            to="about"
+            className="logo"
+            spy={true}
+            smooth={true}
+            offset={-10}
+            duration={500}
+          >
+            <button>Conócenos</button>
+          </Link>
+          <a href="#about"></a>
         </div>
       </section>
       <Producto />

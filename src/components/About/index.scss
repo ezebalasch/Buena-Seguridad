@@ -28,6 +28,10 @@
   color: #fff;
   padding: 1rem 6rem;
 }
+.about .row .content p.hidden {
+  display: none;
+}
+
 .about .row .content button {
   height: 5rem;
   width: 20rem;

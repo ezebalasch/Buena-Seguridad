@@ -1,5 +1,6 @@
 .clientes {
   color: #171717;
+  text-align: center;
 }
 .clientes .title {
   padding: 0 1rem;
@@ -22,6 +23,9 @@
   box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.3);
   background: #0c0b0b;
   margin: 4rem 2rem;
+}
+.clientes .box-container .box.hidden {
+  display: none;
 }
 .clientes .box-container .box img {
   height: 20rem;
@@ -47,4 +51,22 @@
   font-size: 1.6rem;
   color: #ffc246;
   padding: 1.3rem 0.1rem;
+}
+
+.clientes button {
+  height: 5rem;
+  margin-bottom: 5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background: #f9580e;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+}
+.clientes button:hover {
+  background: none;
+  border: 0.2rem solid #f9580e;
 }
