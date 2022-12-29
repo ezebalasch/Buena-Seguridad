@@ -2,35 +2,51 @@
   width: 85%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  padding: 4rem 0;
-  flex-wrap: wrap;
+  padding: 1rem;
 }
 .mision .box-container .box {
+  display: flex;
   background: #171717;
-  height: 25rem;
-  width: 25rem;
-  margin: 3.5rem 2rem;
+  height: 48rem;
+  width: 100rem;
   text-align: center;
   border-radius: 1rem;
 }
-.mision .box-container .box .icono {
-  height: 6rem;
-  width: 6rem;
-  padding: 1rem;
-  line-height: 8rem;
-  text-align: center;
-  color: #f9580e;
-  background: none;
-  margin-top: 2rem;
-  font-size: 5rem;
-}
-.mision .box-container .box h3 {
-  font-size: 2rem;
-  color: #ffc246;
-}
-.mision .box-container .box p {
-  font-size: 1.5rem;
+.mision .box-container .box .col-1 p {
+  font-size: 2.2rem;
   color: #fff;
-  padding: 1rem 0;
+  position: relative;
+  display: inline-block;
+  margin: 2rem 6rem;
+}
+
+.mision .box-container .box img {
+  max-height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1167px) {
+  .mision .box-container {
+    padding: 4rem;
+    margin: 0 14rem;
+    max-width: 70%;
+  }
+  .mision .box-container .box {
+    display: block;
+    height: 110rem;
+    width: 70rem;
+  }
+  .mision .box-container .box img {
+    margin: 0;
+    max-width: 616px;
+    align-items: center;
+  }
+  .mision .box-container .box .col-1 p {
+    padding: 0 2rem 2rem 2rem;
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
 }

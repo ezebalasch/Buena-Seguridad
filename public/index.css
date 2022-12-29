@@ -36,14 +36,22 @@
         padding: 1.5rem 2rem;
     }
     .about .row .image img{
-        height: 30vh;
+        height: 100vh;
         width: 100%;
+        align-items: center;
     }
     .about .row .content{
         padding: 0 2.5rem;
     }
-    .mision .box-container {
-        width: 100%;
+    .mision .box-container .box {
+        display: block;
+        height: 100rem;
+        width: 60rem;
+    }
+    .mision .box-container .box img {
+        margin: 0%;
+        max-width: 600px;
+        align-items: center;
     }
     .contacto .row{
         flex-flow: column;

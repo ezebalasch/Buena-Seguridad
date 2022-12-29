@@ -1,11 +1,5 @@
 import "./index.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink } from "react-router-dom";
-import {
-  faPhone,
-  faShieldAlt,
-  faAmbulance,
-} from "@fortawesome/free-solid-svg-icons";
+import camara from "../../assets/images/familia/padrehijo.jpg";
 
 const Mision = () => {
   return (
@@ -13,25 +7,19 @@ const Mision = () => {
       <h1 class="heading">Mision</h1>
       <div class="box-container">
         <div class="box">
-          <NavLink exact="true">
-            <FontAwesomeIcon icon={faPhone} className="icono" />
-          </NavLink>
-          <h3>Llamadas</h3>
-          <p>accusamus, architecto rem</p>
-        </div>
-        <div class="box">
-          <NavLink exact="true">
-            <FontAwesomeIcon icon={faShieldAlt} className="icono" />
-          </NavLink>
-          <h3>Seguridad</h3>
-          <p>accusamus, architecto rem</p>
-        </div>
-        <div class="box">
-          <NavLink exact="true">
-            <FontAwesomeIcon icon={faAmbulance} className="icono" />
-          </NavLink>
-          <h3>Asistencia</h3>
-          <p>accusamus, architecto rem</p>
+          <img src={camara} alt="familia" />
+
+          <div class="col-1">
+            <p>
+              Mirar hacia el futuro, es lo que nos caracteriza. Es por ello que
+              a través del planteamiento de objetivos y metas claras y por medio
+              de la operación constante, llegamos a establecer una mejora
+              continua que nos lleva a la excelencia operativa. De esta forma
+              apuntamos a fortalecer aún más la organización; siendo
+              responsables, competitiva y comprometida con la sociedad y nuestro
+              recurso humano.
+            </p>
+          </div>
         </div>
       </div>
     </section>
