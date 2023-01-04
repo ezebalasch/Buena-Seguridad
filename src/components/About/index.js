@@ -1,20 +1,12 @@
 import "./index.scss";
 import camara from "../../assets/images/camaras/michal-jakubowski-oQD9uq4Rd4I-unsplash.jpg";
 import Reveal from "react-reveal/Reveal";
-import React from "react";
+import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 
-class FadeExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { show: false };
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick() {
-    this.setState({ show: !this.state.show });
-  }
-}
 const About = () => {
+  const [showState, setShowState] = useState(false);
+
   return (
     <section class="about" id="about">
       <h1 class="heading">Nosotros</h1>
@@ -33,7 +25,7 @@ const About = () => {
               transforma permanentemente.
             </p>
           </Reveal>
-          <Fade top when={this.state.show}>
+          <Fade top collapse when={showState}>
             <p>
               Proveemos de información oportuna y completa.Contamos con rapidéz
               y velocidad en la modificación de dispositivos y respuestas ante
@@ -44,8 +36,8 @@ const About = () => {
             </p>
           </Fade>
 
-          <button type="button" onClick={this.handleClick}>
-            {this.state.show ? "Leer menos" : "Leer más"}
+          <button type="button" onClick={() => setShowState(!showState)}>
+            {showState ? "Leer menos" : "Leer más"}
           </button>
         </div>
       </div>
