@@ -3,8 +3,9 @@
         font-size: 55%;
     }
     header .fa-bars{
-        display: block;
-    }
+        display: flex;
+        align-items: center;
+        cursor: default;    }
     header .navbar{
         position: fixed;
         top: -100rem;
@@ -13,7 +14,7 @@
         background: #171717;
         border-radius: 1rem;
         opacity: 0;
-        transition: .2s linear;
+        transition: top 0.5s;
     }
     header .navbar ul{
         flex-flow: column;
@@ -29,8 +30,9 @@
         display: block;
     }
     header .nav-toggle{
-        top: 5.5rem;
+        top: 69px;
         opacity: 1;
+        
     }
     .home .content p {
         padding: 1.5rem 2rem;

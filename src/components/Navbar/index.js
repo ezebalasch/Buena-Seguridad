@@ -92,9 +92,8 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div class="fas fa-bars"></div>
         </nav>
-        <div class="fas fa-bars"></div>
+        <div id="burgang" class="fas fa-bars"></div>
       </header>
     </div>
   );

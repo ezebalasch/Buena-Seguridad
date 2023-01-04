@@ -36,14 +36,19 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 2rem;
-  z-index: 1000;
+  z-index: 11;
   transition: 0.2s;
   cursor: default;
 }
 header div {
+  display: flex;
   text-align: center;
+  align-items: center;
   height: 60px;
   line-height: 19px;
+  z-index: 11;
+  background: #171717;
+  width: 100%;
 }
 header div a img {
   max-height: 6rem;
@@ -55,7 +60,6 @@ header div .nav-links {
   font-size: 2.5rem;
   font-weight: bold;
   position: relative;
-  top: -23px;
   background: linear-gradient(to top, gold, rgb(169, 121, 0));
   -webkit-background-clip: text;
   background-clip: text;
@@ -96,8 +100,14 @@ header .fa-bars {
   html {
     font-size: 55%;
   }
+  header {
+    padding: 0rem 2rem;
+  }
   header .fa-bars {
-    display: block;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: default;
   }
   header .navbar {
     position: fixed;
@@ -105,9 +115,9 @@ header .fa-bars {
     left: 0;
     width: 100%;
     background: #171717;
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     opacity: 0;
-    transition: 0.2s linear;
+    transition: top 0.5s;
   }
   header .navbar ul {
     flex-flow: column;
@@ -123,7 +133,7 @@ header .fa-bars {
     display: block;
   }
   header .nav-toggle {
-    top: 5.5rem;
+    top: 60px;
     opacity: 1;
   }
 }
