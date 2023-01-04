@@ -48,12 +48,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".fa-bars").click(function () {
+        $("#burgang").click(function () {
           $(this).toggleClass("fa-times");
           $(".navbar").toggleClass("nav-toggle");
         });
         $(window).on("scroll load", function () {
-          $(".fa-bars").removeClass("fa-times");
+          $("#burgang").removeClass("fa-times");
           $(".navbar").removeClass("nav-toggle");
           $("section").each(function () {
             var id = $(this).attr("id");
