@@ -27,7 +27,7 @@ const About = () => {
           </Reveal>
           <Fade top collapse when={showState}>
             <p>
-              Proveemos de información oportuna y completa.Contamos con rapidéz
+              Proveemos de información oportuna y completa. Contamos con rapidez
               y velocidad en la modificación de dispositivos y respuestas ante
               agresiones. Contamos con total control sobre la operación, los
               medios y el personal. Aseguramos el cumplimiento de Leyes y
