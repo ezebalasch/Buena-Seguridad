@@ -27,14 +27,14 @@
 
 .mision .box-container .box img {
   max-height: 100%;
+
   object-fit: cover;
   transition: transform 0.5s;
   border-radius: 1rem;
 }
 @media screen and (max-width: 1167px) {
   .mision .box-container {
-    padding: 0;
-    margin: 4rem;
+    padding: 4rem;
   }
   .mision .box-container .box {
     display: block;

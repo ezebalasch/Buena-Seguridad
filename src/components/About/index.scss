@@ -48,3 +48,13 @@
   background: none;
   border: 0.2rem solid #f9580e;
 }
+@media screen and (max-width: 540px) {
+  .about .row .image img {
+    display: block;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0%;
+  }
+}
