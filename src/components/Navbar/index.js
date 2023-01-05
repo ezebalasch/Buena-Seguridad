@@ -1,8 +1,26 @@
 import "./index.scss";
 import logo from "../../assets/images/Logo/Logo_.png";
 import { Link } from "react-scroll";
+import { useRef } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [activeNavState, setActiveNavState] = useState(false);
+  const burgerElement = useRef(null);
+
+  const handleNavState = () => {
+    const navbar = document.getElementsByClassName("navbar")[0];
+
+    if (!activeNavState) {
+      burgerElement.current.classList.add("fa-times");
+      navbar.classList.add("nav-toggle");
+      setActiveNavState(true);
+    } else {
+      burgerElement.current.classList.remove("fa-times");
+      navbar.classList.remove("nav-toggle");
+      setActiveNavState(false);
+    }
+  };
   return (
     <div className="nav-bar">
       <header>

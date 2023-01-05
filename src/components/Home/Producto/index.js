@@ -9,6 +9,7 @@ import {
   faPersonMilitaryPointing,
 } from "@fortawesome/free-solid-svg-icons";
 import { useRef, useState } from "react";
+import Fade from "react-reveal/Fade";
 
 const Producto = () => {
   const [hiddenState, setHiddenState] = useState(true);
@@ -24,6 +25,7 @@ const Producto = () => {
     }
     setHiddenState((prev) => !prev);
   };
+
   return (
     <section class="product" id="product">
       <div class="box-container">
