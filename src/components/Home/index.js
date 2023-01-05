@@ -7,11 +7,11 @@ const Home = () => {
   return (
     <div>
       <section class="home" id="home">
-        <img
+        {/* <img
           className="fondo"
           alt={"Seguridad Privada Mendoza"}
           src={guardia}
-        />
+        /> */}
         <div class="content">
           <h1>BUENA SEGURIDAD</h1>
           <p>
