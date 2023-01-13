@@ -15,8 +15,8 @@ const Home = () => {
         <div class="content">
           <h1>BUENA SEGURIDAD</h1>
           <p>
-            Nuestro trabajo es convertir del mundo un lugar más seguro para el
-            cuidando, las personas y las empresas.
+            Nuestro trabajo es convertir del mundo un lugar más seguro, ciudando
+            a las personas y las empresas.
           </p>
           <Link
             to="about"
