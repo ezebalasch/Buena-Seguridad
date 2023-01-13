@@ -2,13 +2,13 @@ import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import cliente1 from "../../assets/images/barrios/ParqueLasCandelas.jpg";
-import cliente2 from "../../assets/images/barrios/LosPeralitos.png";
-import cliente3 from "../../assets/images/barrios/SantaOliva.jpg";
-import cliente4 from "../../assets/images/barrios/Natania.jpg";
-import cliente5 from "../../assets/images/barrios/AiresAndino.jpg";
-import cliente6 from "../../assets/images/barrios/Fradaos.jpg";
-import cliente7 from "../../assets/images/barrios/Conviccion.jpg";
+import cliente1 from "../../assets/images/barrios/parquelascandelas.webp";
+import cliente2 from "../../assets/images/barrios/losperalitos.webp";
+import cliente3 from "../../assets/images/barrios/santaoliva.webp";
+import cliente4 from "../../assets/images/barrios/natania.webp";
+import cliente5 from "../../assets/images/barrios/airesandino.webp";
+import cliente6 from "../../assets/images/barrios/fradaos.webp";
+import cliente7 from "../../assets/images/barrios/conviccion.webp";
 import { useRef, useState } from "react";
 
 const Clientes = () => {
