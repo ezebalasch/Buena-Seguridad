@@ -71,3 +71,8 @@
   background: none;
   border: 0.2rem solid #f9580e;
 }
+@media screen and (max-width: 1167px) {
+  .clientes .box-container .box p {
+    font-size: 1.6rem;
+  }
+}

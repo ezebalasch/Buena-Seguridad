@@ -40,7 +40,7 @@
   transition: 0.2s;
 }
 .product .box-container .box p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding: 0.7rem 2rem;
   color: #fff;
 }
@@ -65,4 +65,14 @@
 .product button:hover {
   background: none;
   border: 0.2rem solid #f9580e;
+}
+@media screen and (max-width: 1167px) {
+  .product .box-container .box {
+    height: 26rem;
+    width: 25rem;
+  }
+  .product .box-container .box p {
+    font-size: 1.6rem;
+    padding: 0.7rem 2rem;
+  }
 }
