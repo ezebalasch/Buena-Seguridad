@@ -1,5 +1,5 @@
 import "./index.scss";
-import camara from "../../assets/images/camaras/michal-jakubowski-oQD9uq4Rd4I-unsplash.jpg";
+import camara from "../../assets/images/camaras/cam2.webp";
 import Reveal from "react-reveal/Reveal";
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";

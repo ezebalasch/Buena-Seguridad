@@ -1,5 +1,5 @@
 import "./index.scss";
-import camara from "../../assets/images/familia/padrehijo.jpg";
+import camara from "../../assets/images/familia/padrehijo.webp";
 
 const Mision = () => {
   return (
