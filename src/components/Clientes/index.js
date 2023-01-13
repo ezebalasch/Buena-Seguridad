@@ -2,10 +2,11 @@ import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import cliente0 from "../../assets/images/barrios/dacon.webp";
 import cliente1 from "../../assets/images/barrios/parquelascandelas.webp";
-import cliente2 from "../../assets/images/barrios/losperalitos.webp";
+import cliente2 from "../../assets/images/barrios/natania.webp";
 import cliente3 from "../../assets/images/barrios/santaoliva.webp";
-import cliente4 from "../../assets/images/barrios/natania.webp";
+import cliente4 from "../../assets/images/barrios/losperalitos.webp";
 import cliente5 from "../../assets/images/barrios/airesandino.webp";
 import cliente6 from "../../assets/images/barrios/fradaos.webp";
 import cliente7 from "../../assets/images/barrios/conviccion.webp";
@@ -33,6 +34,35 @@ const Clientes = () => {
       <h1 class="heading">Clientes satisfechos</h1>
       <h3 class="title">Trabajando para brindarles seguridad</h3>
       <div class="box-container">
+        <div class="box">
+          <img
+            src={cliente0}
+            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
+            alt="familias"
+            height="15%"
+            width="15%"
+          />
+          <h3>Asesoría y Construcción</h3>
+          <p>Empresa Constructora Mendoza</p>
+          <div class="stars">
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>
+          </div>
+        </div>
+
         <div class="box">
           <img
             src={cliente1}
