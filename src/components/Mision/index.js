@@ -7,7 +7,11 @@ const Mision = () => {
       <h1 class="heading">Mision</h1>
       <div class="box-container">
         <div class="box">
-          <img src={camara} alt="familia" />
+          <img
+            src={camara}
+            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
+            alt="familia segura Mendoza"
+          />
 
           <div class="col-1">
             <p>

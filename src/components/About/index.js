@@ -12,7 +12,11 @@ const About = () => {
       <h1 class="heading">Nosotros</h1>
       <div class="row">
         <div class="image">
-          <img src={camara} alt="camara de seguridad" />
+          <img
+            src={camara}
+            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
+            alt="camara de seguridad Mendoza"
+          />
         </div>
         <div class="content">
           <Reveal bottom>
