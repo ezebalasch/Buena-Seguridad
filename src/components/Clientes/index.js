@@ -99,8 +99,9 @@ const Clientes = () => {
             height="15%"
             width="15%"
           />
-          <h3>Los Peralitos</h3>
+          <h3>Natania 44</h3>
           <p>Barrio Privado Mendoza</p>
+
           <div class="stars">
             <NavLink exact="true">
               <FontAwesomeIcon icon={faStar} className="icono" />
@@ -155,7 +156,7 @@ const Clientes = () => {
             height="15%"
             width="15%"
           />
-          <h3>Natania 44</h3>
+          <h3>Los Peralitos</h3>
           <p>Barrio Privado Mendoza</p>
           <div class="stars">
             <NavLink exact="true">
