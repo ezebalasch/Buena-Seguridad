@@ -1,0 +1,147 @@
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  outline: none;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+*::selection {
+  background: #f9580e;
+  color: white;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+  background: none;
+}
+html::-webkit-scrollbar-thumb {
+  background: #f9580e;
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 4rem;
+  color: #f9580e;
+  text-align: center;
+  padding: 6rem 1rem 0 0;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+header {
+  width: 100%;
+  background: #171717;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  z-index: 11;
+  transition: 0.2s;
+  cursor: default;
+}
+header div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 60px;
+  line-height: 19px;
+  z-index: 11;
+  background: #171717;
+  width: 100%;
+  line-height: 28px;
+}
+header div a img {
+  max-height: 6rem;
+  z-index: 1;
+}
+header div .nav-links {
+  color: goldenrod;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  background: linear-gradient(to top, gold, rgb(169, 121, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+header .navbar ul li {
+  width: max-content;
+  margin: 0 1rem;
+}
+header .navbar ul li a {
+  font-size: 2rem;
+  color: white;
+  transition: 0.2s;
+}
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+  color: #f9580e;
+}
+header .logo {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+header .fa-bars {
+  font-size: 3rem;
+  color: #f9580e;
+  cursor: pointer;
+  display: none;
+  transition: 0.2s;
+}
+@media (max-width: 890px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 0rem 2rem;
+  }
+  header .logo {
+    display: flex;
+  }
+  header div {
+    line-height: 25px;
+  }
+  header .fa-bars {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: default;
+  }
+  header .navbar {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 100%;
+    background: #171717;
+    border-radius: 0 0 1rem 1rem;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+  header .navbar ul li {
+    max-width: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  header .navbar ul li a {
+    font-size: 3rem;
+    display: block;
+  }
+  header .nav-toggle {
+    top: 60px;
+    opacity: 1;
+  }
+}

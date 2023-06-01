@@ -1,0 +1,78 @@
+.product {
+  text-align: center;
+  padding: 10rem 0 10rem 0;
+  background-color: #0c0b0b;
+}
+.product .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.product .box-container .box {
+  height: 25rem;
+  width: 25rem;
+  background: #171717;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
+  margin: 2rem;
+  cursor: pointer;
+}
+.product .box-container .box.hidden {
+  display: none;
+}
+.product .box-container .box .icono {
+  height: 5rem;
+  width: 5rem;
+  line-height: 6rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #f9580e;
+  font-size: 3rem;
+  margin: 2rem;
+  transition: 0.2s;
+}
+.product .box-container .box h3 {
+  font-size: 2rem;
+  color: #f9580e;
+  transition: 0.2s;
+}
+.product .box-container .box p {
+  font-size: 1.4rem;
+  padding: 0.7rem 2rem;
+  color: #fff;
+}
+.product .box-container .box:hover .icono {
+  background: #ffc246;
+}
+.product .box-container .box:hover h3 {
+  color: #ffc246;
+}
+.product button {
+  height: 5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background: #f9580e;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}
+.product button:hover {
+  background: none;
+  border: 0.2rem solid #f9580e;
+}
+@media screen and (max-width: 1167px) {
+  .product .box-container .box {
+    height: 26rem;
+    width: 25rem;
+  }
+  .product .box-container .box p {
+    font-size: 1.6rem;
+    padding: 0.7rem 2rem;
+  }
+}

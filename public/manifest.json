@@ -1,0 +1,25 @@
+{
+  "short_name": "Buena Seguridad",
+  "name": "App developed by Ezequiel Balasch",
+  "icons": [
+    {
+      "src": "Logo_.png",
+      "sizes": "569x439",
+      "type": "image/png"
+    },
+    {
+      "src": "Logo_.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "Logo_.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffc246"
+}
