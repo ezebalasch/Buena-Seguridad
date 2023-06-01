@@ -23,6 +23,7 @@ const Clientes = () => {
   const conviCard = useRef(null);
   const ligaclubdebarrio = useRef(null);
   const ligarivadaviense = useRef(null);
+  const ligajuninense = useRef(null);
 
   const handleVisibility = () => {
     if (hiddenState === true) {
@@ -31,12 +32,14 @@ const Clientes = () => {
       conviCard.current.classList.remove("hidden");
       ligaclubdebarrio.current.classList.remove("hidden");
       ligarivadaviense.current.classList.remove("hidden");
+      ligajuninense.current.classList.remove("hidden");
     } else {
       airesCard.current.classList.add("hidden");
       fradaosCard.current.classList.add("hidden");
       conviCard.current.classList.add("hidden");
       ligaclubdebarrio.current.classList.add("hidden");
       ligarivadaviense.current.classList.add("hidden");
+      ligajuninense.current.classList.add("hidden");
     }
     setHiddenState((prev) => !prev);
   };
@@ -186,62 +189,6 @@ const Clientes = () => {
             </NavLink>
           </div>
         </div>
-        <div class="box">
-          <img
-            src={cliente9}
-            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
-            alt="familias"
-            height="15%"
-            width="15%"
-          />
-          <h3>Liga Juninense de Fútbol</h3>
-          <p>Liga de Futbol</p>
-          <div class="stars">
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>
-          </div>
-        </div>
-        <div class="box hidden" ref={ligaclubdebarrio}>
-          <img
-            src={cliente8}
-            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
-            alt="familias"
-            height="15%"
-            width="15%"
-          />
-          <h3>Liga de Clubes de Barrio</h3>
-          <p>Liga de fútbol</p>
-          <div class="stars">
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>
-          </div>
-        </div>
         <div class="box hidden" ref={airesCard}>
           <img
             src={cliente5}
@@ -252,34 +199,6 @@ const Clientes = () => {
           />
           <h3>Aires Andino</h3>
           <p>Barrio Privado Mendoza</p>
-          <div class="stars">
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>{" "}
-            <NavLink exact="true">
-              <FontAwesomeIcon icon={faStar} className="icono" />
-            </NavLink>
-          </div>
-        </div>
-        <div class="box hidden" ref={ligarivadaviense}>
-          <img
-            src={cliente10}
-            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
-            alt="familias"
-            height="15%"
-            width="15%"
-          />
-          <h3>Liga Rivadaviense de Fútbol</h3>
-          <p>Liga de Fútbol</p>
           <div class="stars">
             <NavLink exact="true">
               <FontAwesomeIcon icon={faStar} className="icono" />
@@ -336,6 +255,90 @@ const Clientes = () => {
           />
           <h3>Convicción SA</h3>
           <p>Empresa Constructora</p>
+          <div class="stars">
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>
+          </div>
+        </div>
+        <div class="box hidden" ref={ligarivadaviense}>
+          <img
+            src={cliente10}
+            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
+            alt="familias"
+            height="15%"
+            width="15%"
+          />
+          <h3>Liga Rivadaviense de Fútbol</h3>
+          <p>EVENTO DEPORTIVO</p>
+          <div class="stars">
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>
+          </div>
+        </div>
+        <div class="box hidden" ref={ligaclubdebarrio}>
+          <img
+            src={cliente8}
+            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
+            alt="familias"
+            height="15%"
+            width="15%"
+          />
+          <h3>Liga de Clubes de Barrio</h3>
+          <p>EVENTO DEPORTIVO</p>
+          <div class="stars">
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>{" "}
+            <NavLink exact="true">
+              <FontAwesomeIcon icon={faStar} className="icono" />
+            </NavLink>
+          </div>
+        </div>
+        <div class="box hidden" ref={ligajuninense}>
+          <img
+            src={cliente9}
+            sizes="(min-width: 1200px) 1024px, (min-width: 600px) 640px, 320px"
+            alt="familias"
+            height="15%"
+            width="15%"
+          />
+          <h3>Liga Juninense de Fútbol</h3>
+          <p>EVENTO DEPORTIVO</p>
           <div class="stars">
             <NavLink exact="true">
               <FontAwesomeIcon icon={faStar} className="icono" />
