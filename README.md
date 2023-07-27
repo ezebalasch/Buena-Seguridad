@@ -1,3 +1,5 @@
+<img src="https://socialify.git.ci/ezebalasch/Buena-Seguridad/image?font=Jost&language=1&name=1&owner=1&pattern=Brick%20Wall&theme=Dark" alt="Buena-Seguridad" width="100%"/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
