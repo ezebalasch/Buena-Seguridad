@@ -13,7 +13,7 @@ const Footer = () => {
         >
           <FontAwesomeIcon icon={faFacebook} className="icono" />
         </a>
-        <a target={"a_blank"} href="https://www.instagram.com/buena.seguridad/">
+        <a target={"a_blank"} href="https://www.instagram.com/grupobalder/">
           <FontAwesomeIcon icon={faInstagram} className="icono" />
         </a>
         <a
@@ -22,7 +22,7 @@ const Footer = () => {
         >
           <FontAwesomeIcon icon={faMapMarker} className="icono" />
         </a>
-        <a target={"a_blank"} href="mailto:buenaseguridad@gmail.com">
+        <a target={"a_blank"} href="mailto:bseguridadsas@gmail.com">
           <FontAwesomeIcon icon={faEnvelope} className="icono" />
         </a>
       </div>

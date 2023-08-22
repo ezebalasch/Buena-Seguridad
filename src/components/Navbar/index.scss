@@ -56,15 +56,20 @@ header div a img {
   z-index: 1;
 }
 header div .nav-links {
-  color: goldenrod;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 400;
   position: relative;
-  background: linear-gradient(to top, gold, rgb(169, 121, 0));
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding-left: 10px;
+}
+.b {
+  color: white;
+}
+.a {
+  color: red;
+  font-size: 3.5rem;
 }
 
 header .navbar ul {
@@ -87,7 +92,7 @@ header .navbar ul li a:hover {
   color: #f9580e;
 }
 header .logo {
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: white;
   text-transform: uppercase;
 }
@@ -97,6 +102,9 @@ header .fa-bars {
   cursor: pointer;
   display: none;
   transition: 0.2s;
+}
+.img-logo {
+  border-radius: 5px;
 }
 @media (max-width: 890px) {
   html {

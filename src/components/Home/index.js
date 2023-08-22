@@ -13,7 +13,7 @@ const Home = () => {
           src={guardia}
         /> */}
         <div class="content">
-          <h1>BUENA SEGURIDAD</h1>
+          <h1>GRUPO BALDER</h1>
           <p>
             Nuestro trabajo es convertir del mundo un lugar más seguro, ciudando
             a las personas y las empresas.

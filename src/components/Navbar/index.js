@@ -1,5 +1,5 @@
 import "./index.scss";
-import logo from "../../assets/images/Logo/Logo_.png";
+import logo from "../../assets/images/Logo/logotipo.jpg";
 import { Link } from "react-scroll";
 import { useRef } from "react";
 import { useState } from "react";
@@ -33,7 +33,7 @@ const Navbar = () => {
             offset={-70}
             duration={500}
           >
-            <img src={logo} alt="" />
+            <img className="img-logo" src={logo} alt="" />
           </Link>
           <Link
             to="home"
@@ -43,7 +43,9 @@ const Navbar = () => {
             offset={-70}
             duration={500}
           >
-            Buena Seguridad
+            <span className="b">GRUPO B</span>
+            <span className="a">∧</span>
+            <span className="b">LDER</span>
           </Link>
         </div>
 
@@ -83,18 +85,6 @@ const Navbar = () => {
                 duration={500}
               >
                 Mision
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="clientes"
-                className="nav-links"
-                spy={true}
-                smooth={true}
-                offset={-3}
-                duration={500}
-              >
-                Clientes
               </Link>
             </li>
             <li>

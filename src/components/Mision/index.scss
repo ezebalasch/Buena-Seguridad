@@ -1,5 +1,6 @@
 .mision {
   background: #0c0b0b;
+  height: 100vh;
 }
 .mision .box-container {
   width: 85%;
@@ -33,8 +34,11 @@
   border-radius: 1rem;
 }
 @media screen and (max-width: 1167px) {
+  .mision {
+    height: fit-content;
+  }
   .mision .box-container {
-    padding: 4rem;
+    padding: 4rem 0;
   }
   .mision .box-container .box {
     display: block;
@@ -50,8 +54,9 @@
     align-items: center;
   }
   .mision .box-container .box .col-1 p {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0;
     font-size: 2.5rem;
     margin: 2rem;
+    height: max-content;
   }
 }

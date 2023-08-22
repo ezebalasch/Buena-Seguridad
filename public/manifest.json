@@ -1,25 +1,25 @@
 {
-  "short_name": "Buena Seguridad",
-  "name": "App developed by Ezequiel Balasch",
+  "short_name": "Grupo B∧LDER - App developed by Ezequiel Balasch",
+  "name": "Grupo B∧LDER - App developed by Ezequiel Balasch",
   "icons": [
     {
-      "src": "Logo_.png",
+      "src": "logotipo.jpg",
       "sizes": "569x439",
-      "type": "image/png"
+      "type": "image/jpg"
     },
     {
-      "src": "Logo_.png",
-      "type": "image/png",
+      "src": "logotipo.jpg",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "Logo_.png",
-      "type": "image/png",
+      "src": "logotipo.jpg",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffc246"
+  "theme_color": "#ffffff",
+  "background_color": "#000000"
 }
