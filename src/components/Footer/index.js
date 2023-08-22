@@ -7,12 +7,6 @@ const Footer = () => {
   return (
     <section class="footer">
       <div class="icons">
-        <a
-          target={"a_blank"}
-          href="https://web.facebook.com/profile.php?id=100073315748379"
-        >
-          <FontAwesomeIcon icon={faFacebook} className="icono" />
-        </a>
         <a target={"a_blank"} href="https://www.instagram.com/grupobalder/">
           <FontAwesomeIcon icon={faInstagram} className="icono" />
         </a>
