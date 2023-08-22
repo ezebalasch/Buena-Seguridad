@@ -30,7 +30,7 @@ const Contacto = () => {
       <h1 class="heading">Contacto</h1>
       <div class="row">
         <div class="form-container">
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} className="forms" onSubmit={sendEmail}>
             <input type="text" placeholder="nombre" name="name" required />
             <input
               type="email"
